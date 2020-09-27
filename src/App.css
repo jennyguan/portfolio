@@ -2,14 +2,18 @@
   margin-top: 80px;
 }
 
+.content-container {
+  margin: 20px;
+}
+
 .navbar {
   display: flex;
   justify-content: space-between;
-  padding: 20px;
+  padding: 0 20px 0 20px;
   position: fixed;
   top: 0;
   width: -webkit-fill-available;
-  background: lightpink;
+  background: #ffa17e;
   align-items: center;
 }
 
@@ -18,14 +22,19 @@
   align-items: center;
 }
 
-.navbar-nav {
-
-}
-
 .nav-link {
-  margin-left: 5px;
+  margin-left: 15px;
+  color: white;
+  font-size: larger;
+  text-decoration: none;
 }
 
-.content-container {
-  margin: 20px;
+a.nav-link:active {
+  color: #c05e69;
+  border-bottom: 2px solid #c05e69;
+  padding-bottom: 3px;
+}
+
+a.nav-link:hover {
+  color: #c05e69;
 }
