@@ -2,6 +2,20 @@
     text-align: center;
 }
 
+.resume-download {
+    text-align: center;
+    padding: 0 0 20px 0;
+}
+
+a:link, a:visited {
+    color: #c05e69;
+    text-decoration: none;
+}
+
+.resume-link:hover {
+    color: #ffa17e;
+}
+
 .resume {
     border: 1px solid;
     height: 1200px;

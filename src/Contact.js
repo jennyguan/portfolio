@@ -9,24 +9,43 @@ function Contact(props) {
         <div className="content-container">
             <h1>Contact</h1>
             <div className="contact-info">
+
                 <div className="contact-card">
-                    <h3>LinkedIn</h3>
-                    <a className="contact-card-link" href="https://www.linkedin.com/in/jzhguan/" target="_blank">
-                        www.linkedin.com/in/jzhguan/
-                    </a>
+                    <div className="contact-card-column">
+                        <img className="contact-card-icon" src={linkedinIcon} alt="LinkedIn Icon"/>
+                    </div>
+                    <div className="contact-card-column">
+                        <h3>LinkedIn</h3>
+                        <a className="contact-card-link" href="https://www.linkedin.com/in/jzhguan/" target="_blank">
+                            www.linkedin.com/in/jzhguan/
+                        </a>
+                    </div>
                 </div>
+
                 <div className="contact-card">
-                    <h3>Email</h3>
-                    <a className="contact-card-link" href="mailto: jennyzhguan@gmail.com">
-                       jennyzhguan@gmail.com
-                    </a>
+                    <div className="contact-card-column">
+                        <img className="contact-card-icon" src={emailIcon} alt="Email Icon"/>
+                    </div>
+                    <div className="contact-card-column">
+                        <h3>Email</h3>
+                        <a className="contact-card-link" href="mailto: jennyzhguan@gmail.com">
+                            jennyzhguan@gmail.com
+                        </a>
+                    </div>
                 </div>
+
                 <div className="contact-card">
-                    <h3>Phone</h3>
-                    <a className="contact-card-link" href="tel:647-986-7280">
-                        (647) 986 - 7280
-                    </a>
+                    <div className="contact-card-column">
+                        <img className="contact-card-icon" src={phoneIcon} alt="Phone Icon"/>
+                    </div>
+                    <div className="contact-card-column">
+                        <h3>Phone</h3>
+                        <a className="contact-card-link" href="tel:647-986-7280">
+                            (647) 986 - 7280
+                        </a>
+                    </div>
                 </div>
+
             </div>
         </div>
     )
