@@ -20,7 +20,7 @@ function App() {
 
         <Navbar>
           <Navbar.Brand>
-            <img src={logo} className="logo" alt="Logo Image" height="120px"/>
+            <img src={logo} alt="Logo Gif" height="120px"/>
           </Navbar.Brand>
           <Nav>
             <Nav.Link active href="/">Home</Nav.Link>

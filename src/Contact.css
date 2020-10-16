@@ -1,0 +1,25 @@
+.contact-info {
+    display: flex;
+    flex-direction: row;
+}
+
+.contact-card {
+    display: flex;
+    flex-direction: column;
+    width: 33%;
+    padding: 0 20px 0 20px;
+}
+
+.contact-card-link:hover {
+    color: #ffa17e;
+}
+
+.contact-card-icon {
+    width: 30px;
+    height: 30px;
+}
+
+a:link, a:visited {
+    color: #c05e69;
+    text-decoration: none;
+}

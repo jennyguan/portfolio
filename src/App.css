@@ -1,5 +1,5 @@
 .App {
-  margin-top: 80px;
+  margin-top: 140px;
 }
 
 .content-container {
@@ -9,7 +9,7 @@
 .navbar {
   display: flex;
   justify-content: space-between;
-  padding: 0 20px 0 20px;
+  padding: 0 20px 2px 20px;
   position: fixed;
   top: 0;
   width: -webkit-fill-available;
@@ -22,7 +22,7 @@
   align-items: center;
 }
 
-.nav-link {
+a.nav-link {
   margin-left: 15px;
   color: white;
   font-size: larger;
