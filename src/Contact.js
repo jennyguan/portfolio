@@ -1,7 +1,7 @@
 import React from "react";
-import emailIcon from './images/email-icon.png';
-import phoneIcon from './images/phone-icon.png';
-import linkedinIcon from './images/linkedin-icon.png';
+import emailIcon from './images/email-icon.svg';
+import phoneIcon from './images/phone-icon.svg';
+import linkedinIcon from './images/linkedin-icon.svg';
 import './Contact.css';
 
 function Contact(props) {

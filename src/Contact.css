@@ -26,3 +26,7 @@ a:link, a:visited {
 .contact-card-link:hover {
     color: #ffa17e;
 }
+
+h3 {
+    margin-bottom: 12px;
+}
