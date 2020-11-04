@@ -1,15 +1,43 @@
+@font-face {
+  font-family: 'JennyFont';
+  src: url('./fonts/JennyFont.ttf')format('truetype');
+}
+
 .App {
-  margin-top: 140px;
+  margin-top: 170px;
+  font-family: JennyFont;
+  font-size: 25px;
 }
 
 .content-container {
-  margin: 20px;
+  margin: 80px;
+}
+
+.header-animation {
+  animation: typewriter 3s steps(44) 1s 1 normal both,
+  blinkTextCursor 500ms steps(44) infinite normal;
+  white-space: nowrap;
+  overflow: hidden;
+}
+@keyframes typewriter{
+  from{width: 0;}
+  to{width: 24em;}
+}
+@keyframes blinkTextCursor{
+  from{border-right-color: rgba(255,255,255,.75);}
+  to{border-right-color: transparent;}
+}
+
+.page-content {
+  letter-spacing: 0.02em;
+  line-height: 2em;
+  text-align: justify;
 }
 
 .navbar {
   display: flex;
   justify-content: space-between;
-  padding: 0 20px 2px 20px;
+  padding: 0 50px 2px 50px;
   position: fixed;
   top: 0;
   width: -webkit-fill-available;
@@ -31,8 +59,7 @@ a.nav-link {
 
 a.nav-link:active {
   color: #c05e69;
-  border-bottom: 2px solid #c05e69;
-  padding-bottom: 3px;
+  font-weight: bold;
 }
 
 a.nav-link:hover {

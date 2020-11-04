@@ -4,48 +4,39 @@ import phoneIcon from './images/phone-icon.svg';
 import linkedinIcon from './images/linkedin-icon.svg';
 import './Contact.css';
 
+function getContactCard(icon, header, hrefLink, displayedLink) {
+    return (
+        <div className="contact-card">
+            <div className="contact-card-column">
+                <img className="contact-card-icon" src={icon} alt={header + " Icon"}/>
+            </div>
+            <div className="contact-card-column">
+                <h3>{header}</h3>
+                <a className="contact-card-link" href={hrefLink} target="_blank">
+                    {displayedLink}
+                </a>
+            </div>
+        </div>
+    )
+}
+
 function Contact(props) {
     return (
         <div className="content-container">
-            <h1>Contact</h1>
+            <div className="header-animation"><h1>Contact</h1></div>
             <div className="contact-info">
-
-                <div className="contact-card">
-                    <div className="contact-card-column">
-                        <img className="contact-card-icon" src={linkedinIcon} alt="LinkedIn Icon"/>
-                    </div>
-                    <div className="contact-card-column">
-                        <h3>LinkedIn</h3>
-                        <a className="contact-card-link" href="https://www.linkedin.com/in/jzhguan/" target="_blank">
-                            www.linkedin.com/in/jzhguan/
-                        </a>
-                    </div>
-                </div>
-
-                <div className="contact-card">
-                    <div className="contact-card-column">
-                        <img className="contact-card-icon" src={emailIcon} alt="Email Icon"/>
-                    </div>
-                    <div className="contact-card-column">
-                        <h3>Email</h3>
-                        <a className="contact-card-link" href="mailto: jennyzhguan@gmail.com">
-                            jennyzhguan@gmail.com
-                        </a>
-                    </div>
-                </div>
-
-                <div className="contact-card">
-                    <div className="contact-card-column">
-                        <img className="contact-card-icon" src={phoneIcon} alt="Phone Icon"/>
-                    </div>
-                    <div className="contact-card-column">
-                        <h3>Phone</h3>
-                        <a className="contact-card-link" href="tel:647-986-7280">
-                            (647) 986 - 7280
-                        </a>
-                    </div>
-                </div>
-
+                {getContactCard(
+                    linkedinIcon,"LinkedIn",
+                    "https://www.linkedin.com/in/jzhguan/","www.linkedin.com/in/jzhguan/"
+                )}
+                {getContactCard(
+                    emailIcon, "Email",
+                    "mailto: jennyzhguan@gmail.com", "jennyzhguan@gmail.com"
+                )}
+                {getContactCard(
+                    phoneIcon, "Phone",
+                    "tel:647-986-7280", "(647) 986 - 7280"
+                )}
             </div>
         </div>
     )

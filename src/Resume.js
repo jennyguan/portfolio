@@ -5,7 +5,7 @@ import './Resume.css';
 function Resume(props) {
     return (
         <div className="content-container">
-            <h1>Resume</h1>
+            <div className="header-animation"><h1>Resume</h1></div>
             <div className="resume-download">
                 <a className="resume-link" download="JennyGuanResume.pdf" href="/images/Resume.pdf">Download PDF</a>
             </div>

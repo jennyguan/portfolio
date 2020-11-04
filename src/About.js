@@ -3,16 +3,20 @@ import React from "react"
 function About(props) {
     return (
         <div className="content-container">
-            <h1>About</h1>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam nec porta enim. Etiam augue elit, ornare in suscipit sit amet, tincidunt id tortor. Cras luctus laoreet malesuada. Phasellus sodales, nibh in commodo hendrerit, purus libero rhoncus risus, non ultrices nunc metus sit amet lorem. Nulla facilisi. Ut a pretium quam. Nullam vitae tempor massa. Quisque ut consequat libero, ac pharetra urna. Nulla malesuada est ut mi porttitor venenatis. Vestibulum interdum purus lorem, varius vulputate tellus pellentesque id. Donec quis justo hendrerit, porttitor urna vel, volutpat nulla. Cras leo sapien, tempor tempus mi non, ornare mattis ligula. Nulla consectetur lacinia mi vitae tempor. Nullam porta nisl at tristique tincidunt. Fusce scelerisque volutpat mi, a tincidunt dui lobortis ac. Donec vitae elit id neque auctor cursus.
+            <div className="header-animation"><h1>About</h1></div>
+            <div className="page-content">
+                <p>I'm an enthusiastic and hardworking person born and raised in Toronto, Ontario. I'm
+                    passionate about helping people by problem solving through software development.</p>
 
-                Pellentesque tincidunt, nunc at iaculis pretium, nisi libero pharetra urna, ac mattis augue nunc eu tortor. Nulla blandit fermentum ex, vitae fermentum justo elementum in. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae; Pellentesque lacinia vel est nec gravida. Cras pellentesque mattis nunc, vel tempus neque scelerisque vitae. Cras massa sem, ultricies id neque sit amet, vestibulum luctus enim. Proin a ex bibendum, facilisis metus id, tristique purus. Curabitur vel lacinia turpis. Nam condimentum mi dui, in malesuada massa porttitor ut. Etiam ac consectetur arcu. Curabitur rutrum consequat ipsum non vulputate. Maecenas eget venenatis orci. Quisque viverra lobortis mi, sed scelerisque ante pellentesque et. Nulla consequat dolor a dui interdum, vitae suscipit nisi iaculis. Curabitur posuere efficitur tincidunt. Nam rutrum posuere sapien, fermentum tincidunt lectus eleifend vel.
+                <p>I'm currently working towards a Bachelors of Mathematics at the University of Waterloo
+                    and expecting to graduate by the end of 2021. I major in Computational Mathematics and
+                    plan to graduate with multiple minors across different fields (Computing Technology,
+                    Combinatorics & Optimization, Geography & Environmental Management).</p>
 
-                Etiam viverra commodo diam non malesuada. Vivamus posuere consectetur sodales. Morbi non nunc vitae risus molestie posuere sed a diam. Ut facilisis in nisi vitae aliquam. Fusce viverra odio ut metus blandit, non facilisis nibh aliquet. Phasellus leo dolor, ultrices non tellus placerat, posuere tempus ligula. Mauris lacus leo, ullamcorper sit amet congue eu, laoreet in dui. Proin commodo sed magna in dapibus. Aenean ligula nunc, tincidunt at lectus sit amet, aliquet volutpat lectus. Sed tristique consequat massa sit amet blandit. Nullam condimentum nibh lacus, ut tincidunt libero egestas eget.
-
-                Proin interdum euismod urna, in tincidunt lorem lobortis ut. Nullam laoreet posuere lacus, ut mattis leo consectetur at. Integer a posuere dui. Phasellus scelerisque vulputate augue ac vestibulum. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec eget nisi suscipit magna lacinia pretium. Sed interdum ipsum felis, sed viverra diam interdum id. Phasellus dapibus nulla non sapien pharetra elementum. Quisque risus ex, blandit nec tellus at, auctor vulputate sem. Pellentesque eleifend mollis sapien eu facilisis. Sed et efficitur magna, nec elementum orci.
-
-                Proin id ante a sem ornare pretium. Donec non volutpat urna. Duis vulputate ullamcorper libero et sodales. Donec consectetur massa a neque volutpat efficitur. Integer elementum pulvinar mauris, molestie congue mauris lobortis vitae. Praesent eu luctus nisi, non finibus lectus. Nulla venenatis finibus sapien in dignissim. Nunc rhoncus orci nec imperdiet congue. Nam accumsan enim turpis, sagittis ultrices dui congue id. Quisque pretium aliquam gravida. Pellentesque iaculis sem a tortor dictum, sit amet eleifend ex ornare. Cras non erat quis massa sollicitudin ultricies. Aenean suscipit quis dui ac tempor. Donec consequat, erat ut iaculis vehicula, nisl erat molestie dolor, sit amet aliquet elit velit bibendum ipsum.</p>
+                <p>In my free time, I find joy in creative expressions such as bullet journaling, calligraphy,
+                    painting, and embroidery. Don't get me wrong, finding joy in it doesn't mean I'm a pro!
+                    I'm also an avid badminton player, and am always up for a match of foosball.</p>
+            </div>
         </div>
     )
 }
