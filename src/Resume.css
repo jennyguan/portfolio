@@ -2,21 +2,39 @@
     text-align: center;
 }
 
-.resume-download {
-    text-align: center;
-    padding: 0 0 20px 0;
+.btn {
+
 }
 
-a:link, a:visited {
-    color: #c05e69;
-    text-decoration: none;
+.btn-link {
+    color: var(--main-dark-color);
+    padding: 10px;
+    border: var(--main-dark-color) solid 1px;
+    border-radius: 25px;
 }
 
-.resume-link:hover {
-    color: #ffa17e;
+.btn-link:hover {
+    color: var(--main-light-color);
+    border: var(--main-light-color) solid 1px;
+}
+
+.btn-link:active {
+
 }
 
 .resume {
     border: 1px solid;
     height: 1200px;
+}
+
+.timeline-item-dateinner{
+    font-size: 25px;
+}
+
+.work-exp {
+    color: var(--main-dark-color);
+}
+
+.project {
+    color: var(--main-light-color);
 }

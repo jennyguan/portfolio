@@ -5,7 +5,7 @@ function About(props) {
         <div className="content-container">
             <div className="header-animation"><h1>About</h1></div>
             <div className="page-content">
-                <p>I'm an enthusiastic and hardworking person born and raised in Toronto, Ontario. I'm
+                <p>I'm an enthusiastic and diligent individual born and raised in Toronto, Ontario. I'm
                     passionate about helping people by problem solving through software development.</p>
 
                 <p>I'm currently working towards a Bachelors of Mathematics at the University of Waterloo

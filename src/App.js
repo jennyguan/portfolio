@@ -13,12 +13,7 @@ function App() {
   return (
     <BrowserRouter>
       <div className="App">
-        <Route exact path="/" component={Home}/>
-        <Route exact path="/about" component={About}/>
-        <Route exact path="/resume" component={Resume}/>
-        <Route exact path="/contact" component={Contact}/>
-
-        <Navbar>
+        <Navbar id="navbar">
           <Navbar.Brand>
             <img src={logo} alt="Logo Gif" height="120px"/>
           </Navbar.Brand>
@@ -29,6 +24,11 @@ function App() {
             <Nav.Link href="/contact">Contact</Nav.Link>
           </Nav>
         </Navbar>
+
+        <Route exact path="/" component={Home}/>
+        <Route exact path="/about" component={About}/>
+        <Route exact path="/resume" component={Resume}/>
+        <Route exact path="/contact" component={Contact}/>
       </div>
     </BrowserRouter>
   );

@@ -9,8 +9,8 @@ function Home(props) {
                 <p>I'm a 4th year Computational Math student at the University of Waterloo
                     who is pursuing software development!</p>
                 <p>I'm currently looking for internship opportunities starting Spring 2021.</p>
-                <p>Fun fact: all the text you're reading on my website is made from my own
-                    handwriting. </p>
+                {/*<p>Fun fact: all the text you're reading on my website is made from my own*/}
+                {/*    handwriting. </p>*/}
             </div>
         </div>
     )

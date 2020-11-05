@@ -1,12 +1,26 @@
+/*@font-face {*/
+/*  font-family: 'JennyFont';*/
+/*  src: url('./fonts/JennyFont.ttf')format('truetype');*/
+/*}*/
+
 @font-face {
-  font-family: 'JennyFont';
-  src: url('./fonts/JennyFont.ttf')format('truetype');
+  font-family: 'Playfair Display';
+  src: url('https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap');
+}
+
+/*@font-face {*/
+/*  font-family: 'Dancing Script';*/
+/*  src: url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@600;700&display=swap');*/
+/*}*/
+
+:root {
+  --main-light-color: #ffa17e;
+  --main-dark-color: #c05e69;
 }
 
 .App {
   margin-top: 170px;
-  font-family: JennyFont;
-  font-size: 25px;
+  font-family: 'Playfair Display', serif;
 }
 
 .content-container {
@@ -41,8 +55,9 @@
   position: fixed;
   top: 0;
   width: -webkit-fill-available;
-  background: #ffa17e;
+  background: var(--main-light-color);
   align-items: center;
+  z-index: 100;
 }
 
 .navbar-brand {
@@ -57,11 +72,10 @@ a.nav-link {
   text-decoration: none;
 }
 
-a.nav-link:active {
-  color: #c05e69;
-  font-weight: bold;
+a:active {
+  text-decoration: underline;
 }
 
 a.nav-link:hover {
-  color: #c05e69;
+  color: var(--main-dark-color);
 }

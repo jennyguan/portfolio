@@ -15,16 +15,16 @@
 .contact-card-icon {
     width: 50px;
     height: 50px;
-    padding-top: 60%;
+    padding-top: 40%;
 }
 
 a:link, a:visited {
-    color: #c05e69;
+    color: var(--main-dark-color);
     text-decoration: none;
 }
 
 .contact-card-link:hover {
-    color: #ffa17e;
+    color: var(--main-light-color);
 }
 
 h3 {
