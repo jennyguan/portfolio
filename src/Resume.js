@@ -6,7 +6,7 @@ import { Timeline, TimelineItem }  from 'vertical-timeline-component-for-react';
 function ScrollToResume() {
     const resumeElement = document.getElementById("resumePDF")
     const navbarElement = document.getElementById("navbar")
-    const resumeTop = resumeElement.offsetTop-navbarElement.offsetHeight-20;
+    const resumeTop = resumeElement.offsetTop-navbarElement.offsetHeight-15;
     window.scroll({
         top: resumeTop,
         behavior: 'smooth'
@@ -16,9 +16,9 @@ function ScrollToResume() {
 function Resume(props) {
     return (
         <div className="content-container">
-            <div className="header-container">
+            <div className="row-container">
                 <div className="header-animation"><h1>Resume</h1></div>
-                <div className="btn-scroll">
+                <div className="btn-right">
                     <a className="btn-link" onClick={ScrollToResume}>Scroll to PDF</a>
                 </div>
             </div>
@@ -27,9 +27,9 @@ function Resume(props) {
                 <h3>Technical Skills</h3>
                 <ul>
                     <li>Languages: Python, JavaScript, CSS, HTML, Swift, C#, SQL,
-                        Java, C++, Bash, C, Excel VBA</li>
-                    <li>Technologies: React/Redux, Git, AWS Serverless, Xcode
-                        (Simulator, Instruments), Charles, JIRA, Postman, RETS,
+                        Java, C++, Bash, C, VBA</li>
+                    <li>Technologies: React/Redux, Django, Git, JIRA, AWS Serverless, Xcode
+                        (Simulator, Instruments), Charles, Postman, RETS,
                         Google Analytics, WinForms, JasperReports</li>
                 </ul>
             </div>
@@ -45,19 +45,24 @@ function Resume(props) {
                     University of Waterloo, Sept. 2016 - Expected Jun. 2021</p>
                 <ul>
                     <li>Major: (Honours, Co-op) Computational Mathematics</li>
-                    <li>Minors: Computing, Combinatorics & Optimization,
-                        Geography & Environmental Management</li>
+                    <li>Minors: Computing, Combinatorics & Optimization</li>
                     <li>Relevant Courses: Object-Oriented Software Dev. (C++, Bash), Algorithm
                         Design & Data Abstraction (C), Functional Programming (Racket), Data
-                        Types & Structures, Management Info. Systems, Logic & Computation,
-                        Applied Cryptography, Optimization, Scheduling, Combinatorics</li>
+                        Types & Structures, Management Info. Systems, Logic & Computation</li>
                 </ul>
             </div>
 
-            <div className="pdf-resume-container">
-                <a id="resumePDF" className="btn-link" download="JennyGuanResume.pdf"
-                   href="./images/Resume.pdf">Download PDF</a>
-                <img src={resume} className="img-resume" alt="Resume"/>
+            <div>
+                <div id="resumePDF" className="row-container">
+                    <div><h2>Resume PDF</h2></div>
+                    <div className="btn-right">
+                        <a className="btn-link" download="JennyGuanResume.pdf"
+                           href="./images/Resume.pdf">Download PDF</a>
+                    </div>
+                </div>
+                <div className="img-resume-container">
+                    <img src={resume} className="img-resume" alt="Resume"/>
+                </div>
             </div>
         </div>
     )
@@ -71,6 +76,16 @@ const ExperienceTimeline = (
         >
             <h3>Full Stack Web Developer, Polar</h3>
             <h4>Toronto, ON</h4>
+            <ul>
+                <li>Developed on virtual machine environments for all JIRA tickets, and
+                    deployed Git branches to VMs for QA testing</li>
+                <li>Improved usability of client-facing web app by adding features and
+                    changing UI in JavaScript, CSS, and React</li>
+                <li>Expanded client functionality in Django admin with database
+                    migration files in Python</li>
+                <li>Upheld code stability standards by creating unit tests and used Jenkins
+                    to check and compare pipelines regularly</li>
+            </ul>
         </TimelineItem>
 
         <TimelineItem
@@ -153,12 +168,12 @@ const ExperienceTimeline = (
         >
             <h3>Software Developer, KPMG LLP</h3>
             <h4>Toronto, ON</h4>
-            <p>For my first internship, I joined the Tax Transformation & Technology
-                Team where I worked in a unique start-up culture that was hosted within
-                a well-established firm. I worked in an agile environment to streamline tax
-                compliance processes by developing VBA scripts to push and pull data between
-                Excel, tax software (TaxPrep), and forms (Adobe Acrobat).
-            </p>
+            {/*<p>For my first internship, I joined the Tax Transformation & Technology*/}
+            {/*    Team where I worked in a unique start-up culture that was hosted within*/}
+            {/*    a well-established firm. I worked in an agile environment to streamline tax*/}
+            {/*    compliance processes by developing VBA scripts to push and pull data between*/}
+            {/*    Excel, tax software (TaxPrep), and forms (Adobe Acrobat).*/}
+            {/*</p>*/}
             <ul>
                 <li>Streamlined bulk tax compliance processes by developing <strong>VBA</strong>
                     scripts to push and pull data between Excel, tax software
@@ -180,12 +195,10 @@ const ExperienceTimeline = (
             <h3>Predictive Bot, KPMG LLP</h3>
             <h4>Toronto, ON</h4>
             <ul>
-                <li>Prototyped a machine learning project by creating a binary classifier
-                    to predict NBA game wins/losses </li>
-                <li>Web scraped historical game data using Python's BeautifulSoup package
-                    as input for algorithm </li>
-                <li>Organized and facilitated weekly meeting with all developers and
-                    sub Input Team to align vision and set task goals </li>
+                <li>Organized and facilitated Sky AI Team meeting to align vision and set task
+                    goals for a ML project to predict NBA game outcomes with a binary classifier</li>
+                <li>Experimented with Python's Beautiful Soup package to web scrape historical
+                    game data into a database as input for algorithm</li>
             </ul>
 
         </TimelineItem>

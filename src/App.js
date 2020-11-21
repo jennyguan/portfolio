@@ -1,6 +1,7 @@
 import React from 'react';
 import { BrowserRouter, Route } from "react-router-dom";
-import logo from './images/banner.gif';
+import logo from './images/coder-girl.png';
+import banner from './images/banner.gif';
 import Navbar from 'react-bootstrap/Navbar';
 import Nav from 'react-bootstrap/Nav'
 import Home from './Home';
@@ -15,20 +16,17 @@ function App() {
       <div className="App">
         <Navbar id="navbar">
           <Navbar.Brand>
-            <img src={logo} alt="Logo Gif" height="120px"/>
+            <img src={logo} className="logo" alt="Logo" height="120px"/>
+            <img src={banner} alt="Name Gif" height="120px"/>
           </Navbar.Brand>
           <Nav>
             <Nav.Link active href="/">Home</Nav.Link>
-            <Nav.Link href="/about">About</Nav.Link>
             <Nav.Link href="/resume">Resume</Nav.Link>
-            <Nav.Link href="/contact">Contact</Nav.Link>
           </Nav>
         </Navbar>
 
         <Route exact path="/" component={Home}/>
-        <Route exact path="/about" component={About}/>
         <Route exact path="/resume" component={Resume}/>
-        <Route exact path="/contact" component={Contact}/>
       </div>
     </BrowserRouter>
   );

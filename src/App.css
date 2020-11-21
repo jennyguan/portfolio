@@ -1,17 +1,7 @@
-/*@font-face {*/
-/*  font-family: 'JennyFont';*/
-/*  src: url('./fonts/JennyFont.ttf')format('truetype');*/
-/*}*/
-
 @font-face {
   font-family: 'Playfair Display';
   src: url('https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap');
 }
-
-/*@font-face {*/
-/*  font-family: 'Dancing Script';*/
-/*  src: url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@600;700&display=swap');*/
-/*}*/
 
 :root {
   --main-light-color: #ffa17e;
@@ -25,21 +15,6 @@
 
 .content-container {
   margin: 80px;
-}
-
-.header-animation {
-  animation: typewriter 3s steps(44) 1s 1 normal both,
-  blinkTextCursor 500ms steps(44) infinite normal;
-  white-space: nowrap;
-  overflow: hidden;
-}
-@keyframes typewriter{
-  from{width: 0;}
-  to{width: 24em;}
-}
-@keyframes blinkTextCursor{
-  from{border-right-color: rgba(255,255,255,.75);}
-  to{border-right-color: transparent;}
 }
 
 .page-content {
@@ -63,6 +38,10 @@
 .navbar-brand {
   display: flex;
   align-items: center;
+}
+
+.logo {
+  padding-right: 20px;
 }
 
 a.nav-link {

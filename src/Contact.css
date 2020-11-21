@@ -1,21 +1,18 @@
 .contact-info {
     display: flex;
+    justify-content: space-between;
+    padding-top: 30px;
 }
 
 .contact-card {
     display: flex;
-    width: 33%;
-    padding: 0 20px 0 20px;
-}
-
-.contact-card-column {
-    padding-left: 25px;
 }
 
 .contact-card-icon {
     width: 50px;
     height: 50px;
-    padding-top: 40%;
+    padding-top: 5px;
+    padding-right: 20px;
 }
 
 a:link, a:visited {
@@ -25,8 +22,4 @@ a:link, a:visited {
 
 .contact-card-link:hover {
     color: var(--main-light-color);
-}
-
-h3 {
-    margin-bottom: 12px;
 }
