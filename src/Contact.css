@@ -1,11 +1,12 @@
 .contact-info {
     display: flex;
-    justify-content: space-between;
-    padding-top: 30px;
+    justify-content: center;
+    padding-top: 50px;
 }
 
 .contact-card {
     display: flex;
+    padding-right: 50px;
 }
 
 .contact-card-icon {
