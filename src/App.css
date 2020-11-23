@@ -13,14 +13,17 @@
   font-family: 'Playfair Display', serif;
 }
 
-.content-container {
+.page-container {
   margin: 80px;
+  line-height: 1.8em;
+  text-align: justify;
 }
 
-.page-content {
-  letter-spacing: 0.02em;
-  line-height: 2em;
-  text-align: justify;
+@media (max-width: 699px) {
+  .navbar {
+    display: flex;
+    flex-direction: column;
+  }
 }
 
 .navbar {
@@ -40,6 +43,12 @@
   align-items: center;
 }
 
+@media (max-width: 549px) {
+  .logo {
+    display: none;
+  }
+}
+
 .logo {
   padding-right: 20px;
 }
@@ -51,8 +60,8 @@ a.nav-link {
   text-decoration: none;
 }
 
-a:active {
-  text-decoration: underline;
+a.nav-link:active {
+  /*text-decoration: underline;*/
 }
 
 a.nav-link:hover {

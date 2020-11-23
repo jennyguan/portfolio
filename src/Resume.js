@@ -1,9 +1,12 @@
 import React from "react"
 import resume from './images/Resume.svg';
+import scrollDownIcon from './images/scroll-down-icon.svg'
+import scrollUpIcon from './images/scroll-up-icon.svg'
+import downloadIcon from './images/download-icon.svg';
 import './Resume.css';
 import { Timeline, TimelineItem }  from 'vertical-timeline-component-for-react';
 
-function ScrollToResume() {
+function scrollToResume() {
     const resumeElement = document.getElementById("resumePDF")
     const navbarElement = document.getElementById("navbar")
     const resumeTop = resumeElement.offsetTop-navbarElement.offsetHeight-15;
@@ -13,55 +16,77 @@ function ScrollToResume() {
     })
 }
 
+function scrollToTop() {
+    const navbarElement = document.getElementById("navbar")
+    window.scroll({
+        top: navbarElement,
+        behavior: 'smooth'
+    })
+}
+
 function Resume(props) {
     return (
-        <div className="content-container">
-            <div className="row-container">
-                <div className="header-animation"><h1>Resume</h1></div>
-                <div className="btn-right">
-                    <a className="btn-link" onClick={ScrollToResume}>Scroll to PDF</a>
-                </div>
-            </div>
+        <div className="page-container">
 
-            <div>
-                <h3>Technical Skills</h3>
-                <ul>
-                    <li>Languages: Python, JavaScript, CSS, HTML, Swift, C#, SQL,
-                        Java, C++, Bash, C, VBA</li>
-                    <li>Technologies: React/Redux, Django, Git, JIRA, AWS Serverless, Xcode
-                        (Simulator, Instruments), Charles, Postman, RETS,
-                        Google Analytics, WinForms, JasperReports</li>
-                </ul>
-            </div>
-
-            <div>
-                <h3>Work Experience</h3>
-                {ExperienceTimeline}
-            </div>
-
-            <div>
-                <h3>Education</h3>
-                <p>Candidate for Bachelor of Mathematics<br/>
-                    University of Waterloo, Sept. 2016 - Expected Jun. 2021</p>
-                <ul>
-                    <li>Major: (Honours, Co-op) Computational Mathematics</li>
-                    <li>Minors: Computing, Combinatorics & Optimization</li>
-                    <li>Relevant Courses: Object-Oriented Software Dev. (C++, Bash), Algorithm
-                        Design & Data Abstraction (C), Functional Programming (Racket), Data
-                        Types & Structures, Management Info. Systems, Logic & Computation</li>
-                </ul>
-            </div>
-
-            <div>
-                <div id="resumePDF" className="row-container">
-                    <div><h2>Resume PDF</h2></div>
-                    <div className="btn-right">
-                        <a className="btn-link" download="JennyGuanResume.pdf"
-                           href="./images/Resume.pdf">Download PDF</a>
+            <div className="resume-container">
+                <div className="header-container">
+                    <h1>Resume</h1>
+                    <div className="scroll-btn">
+                        Scroll to PDF
+                        <a className="scroll-icon" onClick={scrollToResume}>
+                            <img src={scrollDownIcon} alt="Scroll to PDF" height="45px"/>
+                        </a>
                     </div>
                 </div>
-                <div className="img-resume-container">
-                    <img src={resume} className="img-resume" alt="Resume"/>
+                <div className="resume-text">
+                    <h2>Summary of Skills</h2>
+                    <ul>
+                        <li>Diligently learns new material while openly accepting feedback</li>
+                        <li>Proven leader with exceptional communication and teamwork skills</li>
+                        <li>Extremely responsible and organized even in a fast-paced environment</li>
+                    </ul>
+                        <strong>Languages: </strong>
+                        <li>Proficient: Python, JavaScript, CSS, HTML, Bash, SQL</li>
+                        <li>Familiar with: Swift, C#, Java, C++, C, VBA</li>
+                        <strong>Technologies: </strong>
+                            React, Django, Git, JIRA, Redux, AWS Serverless, Xcode
+                            (Simulator, Instruments), Charles, Postman
+
+
+                    <h2>Experience</h2>
+                    {ExperienceTimeline}
+
+                    <h2>Education</h2>
+                    <p><strong>Candidate for Bachelor of Mathematics</strong><br/>
+                        University of Waterloo, Sept. 2016 - Expected 2021</p>
+                    <ul>
+                        <li>Major: (Honours, Co-op) Computational Mathematics<br />
+                            Minors: Computing, Combinatorics & Optimization</li>
+                        <li>Relevant Courses: Object-Oriented Software Dev. (C++, Bash), Algorithm
+                            Design & Data Abstraction (C), Functional Programming (Racket), Data
+                            Types & Structures, Management Info. Systems, Logic & Computation</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div className="resume-pdf-container">
+                <div className="header-container" id="resumePDF">
+                    <h1>PDF Version</h1>
+                    <a className="download-btn" download="JennyGuanResume.pdf" href="./images/Resume.pdf">
+                        <img src={downloadIcon} alt="Download" height="65px"/>
+                    </a>
+                </div>
+                <div className="resume-img-container">
+                    <img className="resume-img" src={resume} alt="Resume"/>
+                </div>
+            </div>
+
+            <div className="footer-container">
+                <div className="scroll-btn">
+                    <a className="scroll-icon" onClick={scrollToTop}>
+                        <img src={scrollUpIcon} alt="Scroll to Top" height="45px"/>
+                    </a>
+                    Scroll to Top
                 </div>
             </div>
         </div>

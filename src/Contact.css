@@ -1,12 +1,21 @@
-.contact-info {
+.contact-container {
     display: flex;
-    justify-content: center;
+    justify-content: space-around;
     padding-top: 50px;
+}
+
+@media (max-width: 899px) {
+    .contact-container {
+        flex-flow: column wrap;
+    }
+
+    .contact-card {
+        padding: 15px;
+    }
 }
 
 .contact-card {
     display: flex;
-    padding-right: 50px;
 }
 
 .contact-card-icon {
@@ -16,7 +25,7 @@
     padding-right: 20px;
 }
 
-a:link, a:visited {
+.contact-card-link:link, .contact-card-link:visited {
     color: var(--main-dark-color);
     text-decoration: none;
 }

@@ -1,4 +1,27 @@
+@media (max-width: 899px) {
+    .about-container {
+        flex-flow: column wrap-reverse;
+    }
+
+    .personal-picture {
+        padding-top: 30px;
+    }
+}
+
+.about-container {
+    display: flex;
+    flex-direction: row;
+}
+
 .personal-picture {
-    float: left;
     padding-right: 35px;
+}
+
+.about-text {
+    line-height: 1.8em;
+    text-align: justify;
+}
+
+.about-content p {
+    text-indent: 25px;
 }

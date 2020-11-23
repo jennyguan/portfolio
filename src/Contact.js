@@ -8,7 +8,7 @@ function getContactCard(icon, header, hrefLink, displayedLink) {
     return (
         <div className="contact-card">
             <img className="contact-card-icon" src={icon} alt={header + " Icon"}/>
-            <div>
+            <div className="contact-card-text">
                 <strong>{header}</strong>
                 <br />
                 <a className="contact-card-link" href={hrefLink} target="_blank">
@@ -19,25 +19,21 @@ function getContactCard(icon, header, hrefLink, displayedLink) {
     )
 }
 
-function Contact(props) {
-    return (
-        <div>
-            <div className="contact-info">
-                {getContactCard(
-                    linkedinIcon,"LinkedIn",
-                    "https://www.linkedin.com/in/jzhguan/","linkedin.com/in/jzhguan/"
-                )}
-                {getContactCard(
-                    emailIcon, "Email",
-                    "mailto: jennyzhguan@gmail.com", "jennyzhguan@gmail.com"
-                )}
-                {getContactCard(
-                    phoneIcon, "Phone",
-                    "tel:647-986-7280", "(647) 986 - 7280"
-                )}
-            </div>
-        </div>
-    )
-}
+const Contact = (
+    <div className="contact-container">
+        {getContactCard(
+            phoneIcon, "Phone",
+            "tel:647-986-7280", "(647) 986 - 7280"
+        )}
+        {getContactCard(
+            emailIcon, "Email",
+            "mailto: jennyzhguan@gmail.com", "jennyzhguan@gmail.com"
+        )}
+        {getContactCard(
+            linkedinIcon,"LinkedIn",
+            "https://www.linkedin.com/in/jzhguan/","linkedin.com/in/jzhguan/"
+        )}
+    </div>
+)
 
 export default Contact;

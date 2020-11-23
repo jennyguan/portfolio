@@ -5,9 +5,7 @@ import banner from './images/banner.gif';
 import Navbar from 'react-bootstrap/Navbar';
 import Nav from 'react-bootstrap/Nav'
 import Home from './Home';
-import About from './About';
 import Resume from './Resume';
-import Contact from './Contact';
 import './App.css';
 
 function App() {
@@ -16,11 +14,13 @@ function App() {
       <div className="App">
         <Navbar id="navbar">
           <Navbar.Brand>
-            <img src={logo} className="logo" alt="Logo" height="120px"/>
-            <img src={banner} alt="Name Gif" height="120px"/>
+            <a href="/">
+              <img src={logo} className="logo" alt="Logo" height="120px"/>
+              <img src={banner} alt="Name Gif" height="120px"/>
+            </a>
           </Navbar.Brand>
           <Nav>
-            <Nav.Link active href="/">Home</Nav.Link>
+            <Nav.Link href="/">Home</Nav.Link>
             <Nav.Link href="/resume">Resume</Nav.Link>
           </Nav>
         </Navbar>
