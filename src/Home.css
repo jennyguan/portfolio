@@ -1,19 +1,41 @@
-@media (max-width: 899px) {
+@media (max-width: 699px) {
     .about-container {
         flex-flow: column wrap-reverse;
+        justify-content: center;
     }
 
-    .personal-picture {
+    .personal-picture-regular-layout {
         padding-top: 30px;
+        padding-right: 0 !important;
+    }
+}
+
+@media (min-width: 700px) and (max-width: 899px) {
+    .personal-picture-medium-layout {
+        display: flex !important;
+        padding-top: 20px;
+    }
+    .personal-picture-regular-layout {
+        display: none !important;
+    }
+
+    .row-medium-layout {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
     }
 }
 
 .about-container {
     display: flex;
     flex-direction: row;
+    align-items: center;
 }
 
-.personal-picture {
+.personal-picture-medium-layout {
+    display: none;
+}
+.personal-picture-regular-layout {
     padding-right: 35px;
 }
 
@@ -22,6 +44,6 @@
     text-align: justify;
 }
 
-.about-content p {
+.about-text p {
     text-indent: 25px;
 }

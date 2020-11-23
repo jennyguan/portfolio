@@ -3,12 +3,16 @@ import './Home.css';
 import Contact from './Contact';
 import personalPicture from "./images/me.jpg";
 
+const personalPic = (
+    <img src={personalPicture} alt="Me!" height="400px"/>
+)
+
 function Home(props) {
     return (
         <div className="page-container">
             <div className="about-container">
-                <div className="personal-picture">
-                    <img src={personalPicture} alt="Me!" height="400px"/>
+                <div className="personal-picture-regular-layout">
+                    {personalPic}
                 </div>
                 <div className="about-text">
                     <h1>Hi, I'm Jenny!</h1>
@@ -36,7 +40,12 @@ function Home(props) {
                     </p>
                 </div>
             </div>
-            {Contact}
+            <div className="row-medium-layout">
+                <div className="personal-picture-medium-layout">
+                    {personalPic}
+                </div>
+                {Contact}
+            </div>
         </div>
     )
 }
