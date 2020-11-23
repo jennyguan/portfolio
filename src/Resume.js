@@ -1,5 +1,6 @@
 import React from "react"
 import resume from './images/Resume.svg';
+import downloadResume from './images/Resume.pdf';
 import scrollDownIcon from './images/scroll-down-icon.svg'
 import scrollUpIcon from './images/scroll-up-icon.svg'
 import downloadIcon from './images/download-icon.svg';
@@ -72,7 +73,7 @@ function Resume(props) {
             <div className="resume-pdf-container">
                 <div className="header-container" id="resumePDF">
                     <h1>PDF Version</h1>
-                    <a className="download-btn" download="JennyGuanResume.pdf" href="./images/Resume.pdf">
+                    <a className="download-btn" download="JennyGuanResume.pdf" href={downloadResume}>
                         <img src={downloadIcon} alt="Download" height="65px"/>
                     </a>
                 </div>
