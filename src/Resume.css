@@ -19,16 +19,27 @@
     justify-content: center;
 }
 
-.timeline {
-    margin: 0 !important;
+.experience-container {
+    display: flex;
+    flex-direction: row;
+    overflow:auto;
+    white-space: nowrap;
+    scroll-snap-type: x mandatory;
 }
 
-.timeline--wrapper {
-    text-align: -webkit-center;
+.experience {
+    scroll-snap-align: center;
+    padding-left: 20px;
+    padding-right: 20px;
 }
 
-.timeline-item-dateinner{
-    font-size: 25px;
+.experience h3 {
+    white-space: pre-wrap;
+}
+
+.experience p {
+    white-space: normal;
+    width: 70vw;
 }
 
 .resume-pdf-container {
