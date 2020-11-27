@@ -7,7 +7,7 @@ import './Contact.css';
 function getContactCard(icon, header, hrefLink, displayedLink) {
     return (
         <div className="contact-card">
-            <img className="contact-card-icon" src={icon} alt={header + " Icon"}/>
+            <img className="contact-card-icon" src={icon} alt={header + " Icon"} width="40px"/>
             <div className="contact-card-text">
                 <strong>{header}</strong>
                 <br />
@@ -30,7 +30,7 @@ const Contact = (
             "mailto: jennyzhguan@gmail.com", "jennyzhguan@gmail.com"
         )}
         {getContactCard(
-            linkedinIcon,"LinkedIn",
+            linkedinIcon, "LinkedIn",
             "https://www.linkedin.com/in/jzhguan/","linkedin.com/in/jzhguan/"
         )}
     </div>

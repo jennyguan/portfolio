@@ -20,6 +20,9 @@
 }
 
 @media (max-width: 699px) {
+  .page-container {
+    text-align: left;
+  }
   .navbar {
     display: flex;
     flex-direction: column;

@@ -19,10 +19,7 @@
 }
 
 .contact-card-icon {
-    width: 50px;
-    height: 50px;
-    padding-top: 5px;
-    padding-right: 20px;
+    padding-right: 25px;
 }
 
 .contact-card-link:link, .contact-card-link:visited {

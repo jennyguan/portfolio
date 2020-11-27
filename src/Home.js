@@ -33,10 +33,9 @@ function Home(props) {
                         minor in both Computing and Combinatorics & Optimization.
                     </p>
                     <p>
-                        In my free time, I like to learn about UI/UX Design through online workshops and webinars.
-                        I also find joy in creative expressions such as bullet journaling, calligraphy,
-                        embroidery, and painting. Don't get me wrong, finding joy in it doesn't mean I'm a pro!
-                        I'm also an avid badminton player, and am always up for a match of foosball.
+                        In my free time, I like to learn about UI/UX Design and express myself creatively
+                        through bullet journaling, calligraphy, and painting - I'm no pro by any
+                        means! I'm also an avid badminton player, and am always up for a match of foosball.
                     </p>
                 </div>
             </div>

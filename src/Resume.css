@@ -5,80 +5,46 @@
 }
 
 .scroll-btn {
-    opacity: 80%;
+    display: flex;
+    flex-direction: column;
+    opacity: 70%;
+}
+
+.scroll-btn:hover {
+    opacity: 100%;
 }
 
 .scroll-icon {
     display: flex;
     justify-content: center;
+    padding-top: 5px;
+    padding-bottom: 5px;
 }
 
 .download-btn {
     display: flex;
+    flex-direction: row;
+    justify-content: center;
+    padding-left: 25px;
+}
+
+.download-btn img {
+    padding-right: 5px;
+}
+
+.download-btn:link, .download-btn:visited {
+    color: var(--main-dark-color);
+    text-decoration: none;
+}
+
+.download-btn:hover {
+    color: var(--main-light-color);
+}
+
+.vertical-center {
+    display: flex;
     flex-direction: column;
     justify-content: center;
-}
-
-.resume-section {
-    padding-top: 2%;
-}
-
-.accordion, .summary {
-    background-color: whitesmoke;
-    padding: 10px 20px 10px 15px;
-    border-radius: 15px;
-}
-
-.accordion :focus {
-    outline: none;
-}
-
-.accordion__button {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    padding: 5px;
-}
-
-.accordion__button:after {
-    content: '';
-    height: 7px;
-    width: 7px;
-    margin-top: 8px;
-    border-bottom: 2px solid currentColor;
-    border-right: 2px solid currentColor;
-    transform: rotate(45deg);
-}
-
-.accordion__button[aria-expanded='true']::after {
-    transform: rotate(-135deg);
-}
-
-.accordion__heading :hover {
-    color: var(--main-dark-color);
-}
-
-.accordion__panel {
-    padding: 10px;
-    animation: fadein 0.35s ease-in;
-}
-
-.accordion__panel strong {
-    font-size: 15.5px;
-}
-
-@keyframes fadein {
-    0% {
-        opacity: 0;
-    }
-
-    100% {
-        opacity: 1;
-    }
-}
-
-.accordion__heading{
-    font-weight: bold;
 }
 
 .education-header {
@@ -111,6 +77,7 @@
 
 .resume-pdf-container {
     padding-top: 30px;
+    padding-bottom: 30px;
 }
 
 .resume-img-container {
@@ -119,13 +86,12 @@
 
 .resume-img {
     border: 1px solid;
-    width: 100%;
+    width: 80%;
     height: auto;
     margin-top: 30px;
 }
 
 .footer-container {
-    padding-top: 30px;
     display: flex;
     justify-content: flex-end;
 }
