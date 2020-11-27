@@ -11,7 +11,7 @@ function getContactCard(icon, header, hrefLink, displayedLink) {
             <div className="contact-card-text">
                 <strong>{header}</strong>
                 <br />
-                <a className="contact-card-link" href={hrefLink} target="_blank">
+                <a className="contact-card-link" href={hrefLink} target="_blank" rel="noopener noreferrer">
                     {displayedLink}
                 </a>
             </div>

@@ -43,12 +43,12 @@ function Resume(props) {
             <div className="resume-container">
                 <div className="header-container">
                     <h1>Resume</h1>
-                    <a className="scroll-icon" onClick={scrollToResume}>
-                        <div className="scroll-btn">
+                    <div className="scroll-container" onClick={scrollToResume}>
+                        <div className="scroll-icon">
                             Scroll to PDF
                             <img src={scrollDownIcon} alt="Scroll to PDF" height="35px"/>
                         </div>
-                    </a>
+                    </div>
                 </div>
                 <div className="resume-text">
                     <div className="resume-section">
@@ -104,12 +104,12 @@ function Resume(props) {
                 </div>
             </div>
             <div className="footer-container">
-                <a className="scroll-icon" onClick={scrollToTop}>
-                    <div className="scroll-btn">
+                <div className="scroll-container" onClick={scrollToTop}>
+                    <div className="scroll-icon">
                         <img src={scrollUpIcon} alt="Scroll to Top" height="35px"/>
                         Scroll to Top
                     </div>
-                </a>
+                </div>
             </div>
         </div>
     )

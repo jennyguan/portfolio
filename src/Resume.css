@@ -4,21 +4,21 @@
     justify-content: space-between;
 }
 
-.scroll-btn {
+.scroll-container {
+    display: flex;
+    justify-content: center;
+    padding-top: 5px;
+    padding-bottom: 5px;
+}
+
+.scroll-icon {
     display: flex;
     flex-direction: column;
     opacity: 70%;
 }
 
-.scroll-btn:hover {
+.scroll-icon:hover {
     opacity: 100%;
-}
-
-.scroll-icon {
-    display: flex;
-    justify-content: center;
-    padding-top: 5px;
-    padding-bottom: 5px;
 }
 
 .download-btn {
