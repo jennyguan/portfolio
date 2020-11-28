@@ -8,25 +8,28 @@ import Home from './Home';
 import Resume from './Resume';
 import './App.css';
 
+const homePath = process.env.PUBLIC_URL + "/";
+const resumePath = process.env.PUBLIC_URL + "/resume";
+
 function App() {
   return (
     <BrowserRouter basename={process.env.PUBLIC_URL}>
       <div className="App">
         <Navbar id="navbar">
           <Navbar.Brand>
-            <a href="/">
+            <a href={homePath}>
               <img src={logo} className="logo" alt="Logo" height="120px"/>
               <img src={banner} alt="Name Gif" height="120px"/>
             </a>
           </Navbar.Brand>
           <Nav>
-            <Nav.Link href="/">Home</Nav.Link>
-            <Nav.Link href="/resume">Resume</Nav.Link>
+            <Nav.Link href={homePath}>Home</Nav.Link>
+            <Nav.Link href={resumePath}>Resume</Nav.Link>
           </Nav>
         </Navbar>
 
-        <Route exact path="/" component={Home}/>
-        <Route exact path="/resume" component={Resume}/>
+        <Route exact path={homePath} component={Home}/>
+        <Route exact path={resumePath} component={Resume}/>
       </div>
     </BrowserRouter>
   );
