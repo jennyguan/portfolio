@@ -1,5 +1,5 @@
 import React from 'react';
-import {HashRouter, Route} from "react-router-dom";
+import {BrowserRouter, Route} from "react-router-dom";
 import logo from './images/coder-girl.png';
 import banner from './images/banner.gif';
 import Navbar from 'react-bootstrap/Navbar';
@@ -10,7 +10,7 @@ import './App.css';
 
 function App() {
   return (
-    <HashRouter basename={process.env.PUBLIC_URL}>
+    <BrowserRouter basename={process.env.PUBLIC_URL}>
       <div className="App">
         <Navbar id="navbar">
           <Navbar.Brand>
@@ -28,7 +28,7 @@ function App() {
         <Route exact path="/" component={Home}/>
         <Route exact path="/resume" component={Resume}/>
       </div>
-    </HashRouter>
+    </BrowserRouter>
   );
 }
 
