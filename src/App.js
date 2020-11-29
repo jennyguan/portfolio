@@ -21,12 +21,11 @@ function App() {
           </Navbar.Brand>
           <Nav>
             <Nav.Link href="/">Home</Nav.Link>
-            <Nav.Link href="/resume">Resume</Nav.Link>
+            <Nav.Link href="/#/resume">Resume</Nav.Link>
           </Nav>
         </Navbar>
-
         <Route exact path="/" component={Home}/>
-        <Route path="/resume" component={Resume}/>
+        <Route exact path="/resume" component={Resume}/>
       </div>
     </HashRouter>
   );
