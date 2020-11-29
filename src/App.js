@@ -21,7 +21,7 @@ function App() {
           </Navbar.Brand>
           <Nav>
             <Nav.Link href="/">Home</Nav.Link>
-            <Nav.Link href="/#/resume">Resume</Nav.Link>
+            <Nav.Link href="/#/resume">Résumé</Nav.Link>
           </Nav>
         </Navbar>
         <Route exact path="/" component={Home}/>

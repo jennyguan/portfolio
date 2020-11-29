@@ -26,7 +26,7 @@ function Home(props) {
                         </strong>
                     </p>
                     <p>
-                        I'm an enthusiastic and diligent individual born and raised in Toronto, Ontario, and
+                        I'm an enthusiastic and diligent individual born and raised in Toronto, and
                         I'm passionate about helping people by problem solving through software development.
                         I'm in the process of earning my B. Math at the University of Waterloo
                         and expecting to graduate by the end of 2021. I major in Computational Math and

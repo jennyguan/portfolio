@@ -14,11 +14,11 @@
 .scroll-icon {
     display: flex;
     flex-direction: column;
-    opacity: 70%;
+    opacity: 0.70;
 }
 
 .scroll-icon:hover {
-    opacity: 100%;
+    opacity: 1;
 }
 
 .download-btn {

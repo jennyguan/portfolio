@@ -42,7 +42,7 @@ function Resume(props) {
 
             <div className="resume-container">
                 <div className="header-container">
-                    <h1>Resume</h1>
+                    <h1>Résumé</h1>
                     <div className="scroll-container" onClick={scrollToResume}>
                         <div className="scroll-icon">
                             Scroll to PDF

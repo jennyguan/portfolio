@@ -23,7 +23,8 @@ export const ExperiencesAccordion = (
                     on virtual machine environments and effectively traced and debugged code
                     using VSCode and Chrome DevTools. The features I implemented improved
                     usability of the web product by enhancing UI (JavaScript, CSS, React),
-                    and expanded client functionality in Django admin (Python) with database migrations.
+                    and expanded client functionality in Django admin (Python) with database
+                    migrations. I also gained further familiarity with Git and JIRA.
                 </p>
             </AccordionItemPanel>
         </AccordionItem>
@@ -34,14 +35,14 @@ export const ExperiencesAccordion = (
                 </AccordionItemButton>
             </AccordionItemHeading>
             <AccordionItemPanel>
-                <strong>Toronto, ON // Jan. – Mar. 2020</strong>
+                <strong>Toronto, ON // Jan. – Apr. 2020</strong> (Remote halfway through)
                 <p>
-                    As a new iOS developer, I completed Stanford's iOS App Development (CS193P) course
-                    lectures. I used Swift in Xcode to develop features for SDK releases involving UI
-                    changes, caching, HTTP requests, and more. Prior to every release, all-hands would
-                    prepare and manually execute a detailed test plan using Xcode Simulator, Instruments,
-                    and Charles to ensure quality. All tasks were documented appropriately in JIRA, and
-                    I engaged in agile scrum meetings such as daily stand-up, sprint planning, and retrospective.
+                    As a new iOS developer on the Consumer Experience team, I started this internship by
+                    completing Stanford's iOS App Development course lectures. I then developed SDK features in Swift
+                    involving UI changes, caching, HTTP requests, and more. Prior to every release, all-hands prepared
+                    and manually executed a detailed test plan using Xcode Simulator, Instruments, and Charles.
+                    I documented all tasks in JIRA, and engaged in agile scrum meetings such as daily
+                    stand-up, sprint planning, and retrospective.
                 </p>
             </AccordionItemPanel>
         </AccordionItem>
@@ -54,9 +55,9 @@ export const ExperiencesAccordion = (
             <AccordionItemPanel>
                 <strong>Toronto, ON // May – Aug. 2019</strong>
                 <p>
-                    I worked at Properly when the company was still located in the start-up
-                    hub in downtown Toronto, OneEleven. Working collaboratively with the designer
-                    and the small dev team, I developed the front-end of an active listing site (JavaScript,
+                    I worked at Properly when the company was located in downtown Toronto's start-up
+                    hub, OneEleven. Working collaboratively with the designer and the small dev team,
+                    I developed the front-end of an active listing site (JavaScript,
                     CSS, React, Redux) for beta release. I also implemented back-end (Python) systems
                     and APIs with AWS Serverless architecture (Lambda, S3, DynamoDB, CloudFormation)
                     to fetch and pull data powering the listing site and operations web portal.
@@ -74,7 +75,7 @@ export const ExperiencesAccordion = (
                 <p>
                     At Bank of America Merrill Lynch, I worked alone on reimplementing a report generator feature on
                     the front-office trading system to fix a database security issue. I designed
-                    the UI in C# with WinForms, and the client activity data was fetched from SQL
+                    the UI in C# with WinForms, and the client activity data was fetched using complex SQL
                     queries and procedures. This data was then returned through Java endpoints that
                     I created and tested with Postman.
                 </p>
@@ -109,9 +110,12 @@ export const ProjectsAccordion = (
                 </AccordionItemButton>
             </AccordionItemHeading>
             <AccordionItemPanel>
-                I started this personal website you're currently on in September 2020 and it is ever-changing.
-                This is a React app coded in JavaScript and HTML. It is responsively designed
-                and styled with CSS and the Flexbox layout model.
+                <strong>Sept. 2020</strong>
+                <p>
+                    This website was started in September 2020 and it's ever-changing.
+                    It's a React app coded in JavaScript and HTML, while responsively
+                    designed and styled with CSS and the Flexbox layout model.
+                </p>
             </AccordionItemPanel>
         </AccordionItem>
         <AccordionItem>
@@ -123,7 +127,7 @@ export const ProjectsAccordion = (
             <AccordionItemPanel>
                 <strong>Waterloo, ON // July 2018</strong>
                 <p>
-                    I developed a Tetris-like tile-matching puzzle game in a team of 3 for a school
+                    In a team of 3, I developed a Tetris-like tile-matching puzzle game for a school
                     project. I was in charge of block creation and handling levels with
                     varying obstacles and block-shape rarities. I also tested all commands and
                     aspects of the code including block movements, queued blocked, levels, the
@@ -140,7 +144,7 @@ export const ProjectsAccordion = (
             <AccordionItemPanel>
                 <strong>Toronto, ON // Jan. – Apr. 2018</strong>
                 <p>
-                    With my work team that became the Sky AI Team off-hours, we collaboratively
+                    My team, that became the Sky AI Team off-hours, collaboratively
                     came up with a ML project idea to predict NBA game outcomes. I organized and
                     facilitated a meeting to align everyone's visions and set reachable task
                     goals. For this project, I experimented with Python's Beautiful Soup package
