@@ -17,7 +17,7 @@ function Home(props) {
                 <div className="about-text">
                     <h1>Hi, I'm Jenny!</h1>
                     <p>
-                        I'm a 4th year Math student at the University of Waterloo who is also a software
+                        I'm a 4th year Math student at the University of Waterloo and a software
                         developer! Thanks to my co-op program, I already have over 1.5 years of work
                         experience from 5 different internships across FinTech, PropTech, and AdTech fields!
                         Before I finish my undergrad, I'd like to get one more work term under my belt, so
@@ -34,8 +34,8 @@ function Home(props) {
                     </p>
                     <p>
                         In my free time, I like to learn about UI/UX Design and express myself creatively
-                        through bullet journaling, calligraphy, and painting - I'm no pro by any
-                        means! I'm also an avid badminton player, and am always up for a match of foosball.
+                        through bullet journaling, calligraphy, and painting. I'm also an avid badminton player,
+                        and am always up for a match of foosball.
                     </p>
                 </div>
             </div>
