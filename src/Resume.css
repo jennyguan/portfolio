@@ -55,12 +55,13 @@
     font-weight: normal;
 }
 
-@media (max-width: 629px) {
+@media (max-width: 869px) {
     .summary .resume-flex-row {
         flex-flow: column wrap;
     }
 }
-@media (max-width: 869px) {
+
+@media (max-width: 1015px) {
     .courses.resume-flex-row {
         flex-flow: column wrap;
     }

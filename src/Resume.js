@@ -54,29 +54,32 @@ function Resume(props) {
                     <div className="resume-section">
                         <h2>Summary of Skills</h2>
                         <div className="summary">
-                            <li>Diligently learns new material while openly accepting feedback</li>
-                            <li>Proven leader with exceptional communication and teamwork skills</li>
-                            <li>Extremely responsible and organized even in a fast-paced environment</li>
+                            <li>
+                                Diligently learns new material while openly accepting feedback as
+                                documented in positive internship evaluations
+                            </li>
+                            <li>
+                                Possesses exceptional communication and teamwork skills showcased
+                                by successful projects completed in cross-functional agile teams
+                            </li>
+                            <li>
+                                Extremely responsible and organized even in a fast-paced environment
+                                demonstrated through personal management and up to date documentation
+                            </li>
                             <hr />
-                            <div className="resume-flex-row">
-                                <div className="resume-col">
-                                    <strong>Languages:</strong>
-                                </div>
-                                <div className="resume-col">
-                                    Proficient: Python, JavaScript, CSS, HTML, Bash, SQL<br />
-                                    Familiar: Swift, C#, Java, C++, C, VBA
-                                </div>
+                            <div className="resume-col">
+                                <strong>Languages:</strong>
+                                <br />
+                                <i>Proficient:&nbsp;&nbsp;</i>Python, JavaScript, CSS, HTML, Bash, SQL<br />
+                                <i>Familiar:&nbsp;&nbsp;</i>Swift, C#, Java, C++, C, VBA
                             </div>
-                            <hr />
                             <div className="resume-flex-row">
-                                <div className="resume-col">
-                                    <strong>Technologies:</strong>
-                                </div>
-                                <div className="resume-col">
-                                    React, Redux, Django, Unittest, AWS Lambda, Xcode
-                                    (Simulator, Instruments),
-                                    DevTools, Charles, Postman, Git, JIRA
-                                </div>
+                                <strong>Frameworks & Libraries:&nbsp;&nbsp;</strong>
+                                React, Redux, Django, Unittest, Flexbox, Bootstrap, AWS
+                            </div>
+                            <div className="resume-flex-row">
+                                <strong>Tools:&nbsp;&nbsp;</strong>
+                                Git, JIRA, DevTools, Jenkins, Charles, Postman, Google Analytics
                             </div>
                         </div>
                     </div>

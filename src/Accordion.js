@@ -19,12 +19,13 @@ export const ExperiencesAccordion = (
             <AccordionItemPanel>
                 <strong>Remote // Sept. – Dec. 2020</strong>
                 <p>
-                    For my first fully-remote internship, I developed client-facing features
-                    on virtual machine environments and effectively traced and debugged code
-                    using VSCode and Chrome DevTools. The features I implemented improved
-                    usability of the web product by enhancing UI (JavaScript, CSS, React),
-                    and expanded client functionality in Django admin (Python) with database
-                    migrations. I also gained further familiarity with Git and JIRA.
+                    For my first fully-remote internship, I expanded functionality in Django admin
+                    (Python) with database migration scripts, allowing clients to add custom fields
+                    and grant special team permissions. I also simplified the workflow for power
+                    users by creating convenient dashboard features in JavaScript (React, Redux) & CSS.
+                    I worked on virtual machine environments and effectively debugged issues using
+                    VSCode & Chrome DevTools, while gaining further familiarity with Git &
+                    JIRA throughout.
                 </p>
             </AccordionItemPanel>
         </AccordionItem>
@@ -37,12 +38,12 @@ export const ExperiencesAccordion = (
             <AccordionItemPanel>
                 <strong>Toronto, ON // Jan. – Apr. 2020</strong> (Remote halfway through)
                 <p>
-                    As a new iOS developer on the Consumer Experience team, I started this internship by
-                    completing Stanford's iOS App Development course lectures. I then developed SDK features in Swift
-                    involving UI changes, caching, HTTP requests, and more. Prior to every release, all-hands prepared
-                    and manually executed a detailed test plan using Xcode Simulator, Instruments, and Charles.
-                    I documented all tasks in JIRA, and engaged in agile scrum meetings such as daily
-                    stand-up, sprint planning, and retrospective.
+                    As a new iOS developer, I started this internship by completing Stanford's iOS App
+                    Development (CS193P) course lectures. I then started developing features and bug fixes
+                    in Swift for SDK releases and the internal test app. These features included
+                    improvements in UI, caching, clearing iCloud Keychains, and the handling of JWTs in
+                    HTTP requests. Before every release, I prepared and manually executed a detailed test plan
+                    using Xcode (Simulator, Instruments), Charles, and some exploratory testing.
                 </p>
             </AccordionItemPanel>
         </AccordionItem>
@@ -58,7 +59,7 @@ export const ExperiencesAccordion = (
                     I worked at Properly when the company was located in downtown Toronto's start-up
                     hub, OneEleven. Working collaboratively with the designer and the small dev team,
                     I developed the front-end of an active listing site (JavaScript,
-                    CSS, React, Redux) for beta release. I also implemented back-end (Python) systems
+                    React, Redux, CSS) for beta release. I also implemented back-end (Python) systems
                     and APIs with AWS Serverless architecture (Lambda, S3, DynamoDB, CloudFormation)
                     to fetch and pull data powering the listing site and operations web portal.
                 </p>
@@ -73,11 +74,11 @@ export const ExperiencesAccordion = (
             <AccordionItemPanel>
                 <strong>Toronto, ON // Sept. – Dec. 2018</strong>
                 <p>
-                    At Bank of America Merrill Lynch, I worked alone on reimplementing a report generator feature on
-                    the front-office trading system to fix a database security issue. I designed
-                    the UI in C# with WinForms, and the client activity data was fetched using complex SQL
-                    queries and procedures. This data was then returned through Java endpoints that
-                    I created and tested with Postman.
+                    At Bank of America Merrill Lynch, I worked alone on redesigning a report generator feature on
+                    the front-office trading system to fix a database security issue. I created
+                    the UI in C# (WinForms, JasperReports), and client activity data from the MSSQL
+                    database was fetched using complex SQL queries and procedures. This data was then returned
+                    through REST endpoints that I created in Java and tested through Postman.
                 </p>
             </AccordionItemPanel>
         </AccordionItem>
@@ -128,7 +129,7 @@ export const ProjectsAccordion = (
                 <strong>Waterloo, ON // July 2018</strong>
                 <p>
                     In a team of 3, I developed a Tetris-like tile-matching puzzle game for a school
-                    project. I was in charge of block creation and handling levels with
+                    project using C++. I was in charge of block creation and handling levels with
                     varying obstacles and block-shape rarities. I also tested all commands and
                     aspects of the code including block movements, queued blocked, levels, the
                     point system, and game reset.
@@ -163,7 +164,7 @@ export const EducationAccordion = (
                     <div className="education-header">
                         Candidate for Bachelor of Mathematics<br />
                         <div className="university-text">
-                            University of Waterloo, Sept. 2016 - Expected 2021
+                            University of Waterloo, Sept. 2016 - Oct. 2021
                         </div>
                     </div>
                 </AccordionItemButton>
@@ -174,7 +175,7 @@ export const EducationAccordion = (
                 <hr />
                 <div className="courses resume-flex-row">
                     <div className="resume-col">
-                        Relevant Courses:
+                        <strong>Relevant Courses:</strong>
                     </div>
                     <div className="resume-col">
                         Object-Oriented Software Dev. (C++, Bash), <br />
