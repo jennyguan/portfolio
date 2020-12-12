@@ -18,12 +18,14 @@ function Home(props) {
                     <h1>Hi, I'm Jenny!</h1>
                     <p>
                         I'm a 4th year Math student at the University of Waterloo and a software
-                        developer! Thanks to my co-op program, I already have over 1.5 years of work
-                        experience from 5 different internships across FinTech, PropTech, and AdTech fields!
-                        Before I finish my undergrad, I'd like to get one more work term under my belt, so
+                        developer! Thanks to my co-op program, I have over 1.5 years of work experience
+                        from 5 different internships across FinTech, PropTech, and AdTech fields!
+                        I'd like to get one more work term under my belt before I finish my undergrad, so
                         <strong>
                             &nbsp;I'm currently looking for internship opportunities starting Spring 2021.
                         </strong>
+                        &nbsp;Check out my
+                        <a href="/#/resume"> resume here.</a>
                     </p>
                     <p>
                         I'm an enthusiastic and diligent individual born and raised in Toronto, and

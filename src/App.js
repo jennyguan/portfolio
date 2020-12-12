@@ -1,7 +1,6 @@
 import React from 'react';
 import {HashRouter, Route} from "react-router-dom";
-import logo from './images/coder-girl.png';
-import banner from './images/banner.gif';
+import banner from './images/banner.png';
 import Navbar from 'react-bootstrap/Navbar';
 import Nav from 'react-bootstrap/Nav'
 import Home from './Home';
@@ -15,7 +14,6 @@ function App() {
         <Navbar id="navbar">
           <Navbar.Brand>
             <a href="/">
-              <img src={logo} className="logo" alt="Logo" height="120px"/>
               <img src={banner} alt="Name Gif" height="120px"/>
             </a>
           </Navbar.Brand>

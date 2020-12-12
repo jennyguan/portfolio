@@ -32,15 +32,6 @@
     padding-right: 5px;
 }
 
-.download-btn:link, .download-btn:visited {
-    color: var(--main-dark-color);
-    text-decoration: none;
-}
-
-.download-btn:hover {
-    color: var(--main-light-color);
-}
-
 .vertical-center {
     display: flex;
     flex-direction: column;

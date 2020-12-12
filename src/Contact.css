@@ -21,12 +21,3 @@
 .contact-card-icon {
     padding-right: 25px;
 }
-
-.contact-card-link:link, .contact-card-link:visited {
-    color: var(--main-dark-color);
-    text-decoration: none;
-}
-
-.contact-card-link:hover {
-    color: var(--main-light-color);
-}

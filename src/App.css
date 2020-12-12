@@ -4,12 +4,13 @@
 }
 
 :root {
-  --main-light-color: #ffa17e;
+  --main-light-color: #ffdcd1;
+  --main-medium-color: #ff9d8e;
   --main-dark-color: #c05e69;
 }
 
 .App {
-  margin-top: 170px;
+  margin-top: 160px;
   font-family: 'Playfair Display', serif;
 }
 
@@ -47,27 +48,17 @@
   align-items: center;
 }
 
-@media (max-width: 549px) {
-  .logo {
-    display: none;
-  }
-}
-
-.logo {
-  padding-right: 20px;
-}
-
 a.nav-link {
   margin-left: 15px;
-  color: white;
   font-size: 21px;
   text-decoration: none;
 }
 
-a.nav-link:active {
-  /*text-decoration: underline;*/
+a:link, a:visited {
+  color: var(--main-dark-color);
+  text-decoration: none;
 }
 
-a.nav-link:hover {
-  color: var(--main-dark-color);
+a:hover {
+  color: var(--main-medium-color);
 }
