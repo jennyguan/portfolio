@@ -70,7 +70,7 @@ function Resume(props) {
                             <div className="resume-col">
                                 <strong>Languages:</strong>
                                 <br />
-                                <i>Proficient:&nbsp;&nbsp;</i>Python, JavaScript, CSS, HTML, Bash, SQL<br />
+                                <i>Proficient:&nbsp;&nbsp;</i>Python, JavaScript, CSS, HTML, SQL, Bash<br />
                                 <i>Familiar:&nbsp;&nbsp;</i>Swift, C#, Java, C++, C, VBA
                             </div>
                             <div className="resume-flex-row">

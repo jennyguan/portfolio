@@ -164,7 +164,7 @@ export const EducationAccordion = (
                     <div className="education-header">
                         Candidate for Bachelor of Mathematics<br />
                         <div className="university-text">
-                            University of Waterloo, Sept. 2016 - Oct. 2021
+                            University of Waterloo, Sept. 2016 - Aug. 2021
                         </div>
                     </div>
                 </AccordionItemButton>
@@ -183,9 +183,8 @@ export const EducationAccordion = (
                         Functional Programming (Racket),<br />
                     </div>
                     <div className="resume-col">
-                        Computers & Computer Systems, <br />
-                        Management Info. Systems, <br />
-                        Data Types & Structures
+                        Data Types & Structures, <br />
+                        Databases (SQL)
                     </div>
                 </div>
             </AccordionItemPanel>
